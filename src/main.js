@@ -4,12 +4,13 @@ import router from "./router";
 import store from "./store";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
-
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
-
 new Vue({
-  router,
-  store,
-  render: (h) => h(App),
+  router: router,
+  store: store,
+  render: function (h) {
+    return h(App);
+  },
 }).$mount("#app");
+//# sourceMappingURL=main.js.map
